@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register - TechFest 2025</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="register">
+  <main>
+    <div class="form-box">
+      <h2>Register for TechFest 2025</h2>
+      <form id="registerForm">
+        <input type="text" id="name" placeholder="Full Name" required>
+        <input type="text" id="rollno" placeholder="Roll Number" required>
+        <input type="tel" id="phone" placeholder="Phone Number" required pattern="[0-9]{10}">
+        <input type="email" id="email" placeholder="Email" required>
+        
+        <select id="department" required>
+          <option value="">Select Department</option>
+          <option value="CSE">CSE</option>
+          <option value="MNC">MNC</option>
+          <option value="ECE">ECE</option>
+          <option value="EE">EE</option>
+          <option value="Civil">Civil</option>
+          <option value="Mech">Mechanical</option>
+          <option value="MME">MME</option>
+          <option value="CHE">Chemical</option>
+        </select>
+
+        <select id="year" required>
+          <option value="">Select Year</option>
+          <option value="1st">1st Year</option>
+          <option value="2nd">2nd Year</option>
+          <option value="3rd">3rd Year</option>
+          <option value="4th">4th Year</option>
+        </select>
+
+        <button type="submit">Register</button>
+      </form>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2025 TechFest. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
