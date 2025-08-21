@@ -41,11 +41,11 @@ document.addEventListener("DOMContentLoaded", () => {
         li.innerHTML = `
           <div>
             <strong>${i + 1}. ${p.name}</strong> (${p.rollno}) — ${p.department}, ${p.year}<br>
-            📞 ${p.phone} | ✉️ ${p.email}
+             ${p.phone} | ${p.email}
           </div>
           <div class="actions">
-            <button class="edit-btn" data-id="${p.id}">✏️ Edit</button>
-            <button class="del-btn" data-id="${p.id}">🗑️ Delete</button>
+            <button class="edit-btn" data-id="${p.id}"> Edit</button>
+            <button class="del-btn" data-id="${p.id}"> Delete</button>
           </div>
         `;
         list.appendChild(li);
